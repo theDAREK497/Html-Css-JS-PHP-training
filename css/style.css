@@ -1,0 +1,144 @@
+body {
+    height:100%;
+    padding:0;
+    margin: 0;
+    background: none;
+}
+
+.header {
+    background-color: #566573;
+    z-index: 32;
+    padding: 16px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.region {
+    margin-left: 120px;
+    margin-right: 60px;
+}
+
+.login {
+    float: right;
+    margin-right: 120px;
+}
+
+.center-menu {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+.content{
+    margin-top: 50px;
+}
+.product {
+    background: #fff none repeat scroll 0 0;
+    overflow: hidden;
+    padding: 25px 15px;
+    position: relative;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 20px;
+}
+.product:hover {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.product-title a {
+    color: #000;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.product-price {
+    bottom: 15px;
+    left: 0;
+    position: absolute;
+    color: #d51e08;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 20px;
+    width: auto; 
+}
+
+.list-group-item {    
+    padding-left: 0 !important;
+    color: grey;
+    border: none!important;
+}
+
+.title-cataloge {
+    padding: .75rem 1.25rem .75rem 0;
+}
+
+.old-price {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.product-desc {
+    margin-bottom: 0;
+    min-height: 48px;
+}
+
+.count-notif{
+  padding: .60em .99em!important;
+}
+
+.badge {
+    left: -2px;
+    top: -2px;
+    position: absolute;
+    width: 100px;
+}
+
+.badge-primary {    
+    background-color: #8C0505!important;
+}
+
+.btn {
+  font-size: 14px!important;
+  position: absolute;
+  bottom: 15px;
+  margin-bottom: 0.8rem;
+  right: 20px ;
+  padding-top: 1px!important;
+  padding-bottom: 1px!important;   
+}
+
+.bag {
+    margin-top: 40px;
+}
+
+@media (min-width: 576px) {
+    .min-width-250-md {
+        flex-basis: 250px !important;
+        max-width: 250px !important;
+        margin-bottom: 40px;
+    }    
+}
+
+@media (max-width: 575px) {
+    .min-width-250-md {
+        margin-bottom: 20%;
+    }
+    .product-price {
+        font-size: 24px;
+    }
+    .btn {
+        bottom: 18px;
+        font-size: 18px!important;
+    }
+}
+
+.border-lightgrey {
+    border-color: #e8e8e8!important;
+}
+
+.product-buy {
+    height: 10%;
+}

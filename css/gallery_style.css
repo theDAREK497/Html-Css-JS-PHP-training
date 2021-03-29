@@ -1,0 +1,27 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  display: none;
+}
+
+.demo_zone {
+  width: 60%;
+  height: 60%;
+  margin-top: 10%;
+}
+
+.image {
+  width: 100%;
+}
