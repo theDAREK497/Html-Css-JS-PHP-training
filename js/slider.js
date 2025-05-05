@@ -1,23 +1,13 @@
-const swiper = new Swiper('.swiper-container', {  
-  cssMode: true,
-  spaceBetween: 30,
-  centeredSlides: true,
-  // Автоплэй
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-
-  // Пагинация
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // Управление
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+const swiper = new Swiper('.swiper-container', {
+  loop: true, // Бесконечная прокрутка
+  effect: "fade", // Плавное переключение
+  autoplay: { delay: 5000 },
+  pagination: { el: '.swiper-pagination', clickable: true },
+  navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
   keyboard: true,
+  // Адаптивность
+  breakpoints: {
+    768: { slidesPerView: 1 },
+    1024: { slidesPerView: 1.5, spaceBetween: 40 }
+  }
 });

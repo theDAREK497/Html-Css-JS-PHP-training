@@ -13,7 +13,25 @@ body {
 }
 
 figcaption {
-  display: none;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+  .demo_zone {
+    width: 90%;
+    margin-top: 5%;
+  }
+  .col-6 {
+    width: 100%;
+  }
 }
 
 .demo_zone {

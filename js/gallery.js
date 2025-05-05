@@ -1,7 +1,10 @@
-$( '[data-fancybox="images"]' ).fancybox({
-  caption : function( instance, item ) {
-      return $(this).find('figcaption').html();
-  }
+$('[data-fancybox="images"]').fancybox({
+  caption: function (instance, item) {
+    return $(this).find('figcaption').html();
+  },
+  buttons: ["close"], 
+  animationEffect: "fade",
+  transitionEffect: "circular",
 });
 
 $(function(){

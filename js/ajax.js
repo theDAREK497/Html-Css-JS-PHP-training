@@ -1,9 +1,12 @@
 $(document).ready(function () {
-	$('button').click(function () {
-		$.get("../html/ajax/ajax" + $(this).attr('data-ajax') + ".html", success);
- 	});
-
-	function success(data) {
-		$('#content').html(data);
- 	}
-}); 
+  $('button').click(function () {
+    $('#content').html('<div class="spinner-border text-primary"></div>');
+    $.get("../html/ajax/ajax" + $(this).attr('data-ajax') + ".html")
+      .done(function (data) {
+        $('#content').html(data);
+      })
+      .fail(function () {
+        $('#content').html('<div class="alert alert-danger">Ошибка загрузки!</div>');
+      });
+  });
+});

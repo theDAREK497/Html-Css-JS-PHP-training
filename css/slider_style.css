@@ -21,20 +21,26 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
+  transition: transform 0.5s; /* Анимация перехода */
+}
+
+/* Эффект при наведении */
+.swiper-slide:hover {
+  transform: scale(1.02);
+}
+
+/* Адаптивность */
+@media (max-width: 576px) {
+  .demo_zone {
+    width: 90%;
+    height: 25%;
+  }
+  .slide__text {
+    width: 80%;
+  }
 }
 
 .demo_zone {
